@@ -13,4 +13,8 @@ function createPerson(firstName, lastName, phoneNumber, emailAddress) {
     return person;
 }
 
+let contacts = []
 
+function displayContact() {
+
+}
