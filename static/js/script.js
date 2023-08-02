@@ -59,3 +59,7 @@ function addContact(event) {
     displayContact();
     clearForm();
 }
+
+function editContact(index) {
+
+}
