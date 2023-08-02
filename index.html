@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddressBook</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>AddressBook</h1>
+    </header>
+
+    <main>
+        <form id="form" class="contact-form">
+            <h2>Add New Contact</h2>
+            <div class="form-group">
+                <label for="firstNameInput">First Name</label>
+                <input type="text" id="firstNameInput" required>
+            </div>
+            <div class="form-group">
+                <label for="lastNameInput">Last Name</label>
+                <input type="text" id="lastNameInput" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneInput">Phone Number</label>
+                <input type="text" id="phoneInput" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                <label for="emailInput">Email</label>
+                <input type="text" id="emailInput" required>
+            </div>
+            <button type="submit" class="btn">Add Contact</button>
+        </form>
+
+        <div id="contacts" class="contact-list">
+            <!-- Contact list will be displayed here -->
+        </div>
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
