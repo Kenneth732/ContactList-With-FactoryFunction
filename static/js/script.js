@@ -19,4 +19,27 @@ function displayContact() {
     const contactContainer = document.querySelector('#contacts');
     contactContainer.innerHTML = '';
 
+    contacts.forEach((contact, index) => {
+        const contactElement = document.createElement('div');
+        contactElement.innerHTML =
+            '<h3>' +
+            contact.firstName +
+            '</h3>' +
+            '<h3>' +
+            contact.lastName +
+            '</h3>' +
+            '<p>Phone: ' +
+            contact.phoneNumber +
+            '</p>' +
+            '<p>Email: ' +
+            contact.emailAddress +
+            '</p>' +
+            "<button onclick='editContact(" +
+            index +
+            ")'>Edit</button>" +
+            "<button onclick='deleteContact(" +
+            index +
+            ")'>Delete</button>";
+        contactContainer.appendChild(contactElement);
+    });
 }
