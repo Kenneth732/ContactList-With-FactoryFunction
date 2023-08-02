@@ -43,3 +43,19 @@ function displayContact() {
         contactContainer.appendChild(contactElement);
     });
 }
+
+
+function addContact(event) {
+    event.preventDefault();
+
+    const firstName = document.querySelector('#firstNameInput').value;
+    const lastName = document.querySelector('#lastNameInput').value;
+    const phoneNumber = document.querySelector('#phoneInput').value;
+    const emailAddress = document.querySelector('#emailInput').value;
+
+    const newContact = createPerson(firstName, lastName, phoneNumber, emailAddress);
+    contacts.push(newContact);
+
+    displayContact();
+    clearForm();
+}
