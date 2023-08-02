@@ -90,3 +90,4 @@ function clearForm() {
     document.querySelector('#phoneInput').value = '';
     document.querySelector('#emailInput').value = '';
 }
+document.querySelector('#form').addEventListener('submit', addContact);  
