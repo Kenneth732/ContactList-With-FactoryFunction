@@ -83,3 +83,10 @@ function deleteContact(index) {
         displayContact();
     }
 }
+
+function clearForm() {
+    document.querySelector('#firstNameInput').value = '';
+    document.querySelector('#lastNameInput').value = '';
+    document.querySelector('#phoneInput').value = '';
+    document.querySelector('#emailInput').value = '';
+}
