@@ -61,5 +61,16 @@ function addContact(event) {
 }
 
 function editContact(index) {
+    const contact = contacts[index];
 
+    var firstName = prompt('Enter the new first name:', contact.firstName);
+    var lastName = prompt('Enter the new last name:', contact.lastName);
+    var phoneNumber = prompt('Enter the new phone number:', contact.phoneNumber);
+    var emailAddress = prompt('Enter the new email address:', contact.emailAddress);
+
+    contact.firstName = firstName;
+    contact.lastName = lastName;
+    contact.phoneNumber = phoneNumber;
+    contact.emailAddress = emailAddress;
+    displayContact();
 }
