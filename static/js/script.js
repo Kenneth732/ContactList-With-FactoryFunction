@@ -76,5 +76,10 @@ function editContact(index) {
 }
 
 function deleteContact(index) {
+    var confirmDelete = confirm('Are you sure you want to delete this contact?');
 
+    if (confirmDelete) {
+        contacts.splice(index, 1);
+        displayContact();
+    }
 }
