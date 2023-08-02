@@ -16,5 +16,7 @@ function createPerson(firstName, lastName, phoneNumber, emailAddress) {
 let contacts = []
 
 function displayContact() {
+    const contactContainer = document.querySelector('#contacts');
+    contactContainer.innerHTML = '';
 
 }
