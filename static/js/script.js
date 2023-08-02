@@ -74,3 +74,7 @@ function editContact(index) {
     contact.emailAddress = emailAddress;
     displayContact();
 }
+
+function deleteContact(index) {
+
+}
